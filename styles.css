@@ -14,6 +14,17 @@
     margin: 29px 0;
 }
 
+.charges {
+    margin-top: 29px;
+    margin-bottom: -19px;
+}
+
+#meal-details,
+.charges,
+.earnings {
+    background: gray;
+}
+
 #meal-details .panel {
     height: 100%;
 }
@@ -41,8 +52,8 @@ input {
     text-align: center;
 }
 
-#meal-details hr {
-    width: 89%;
+#meal-details {
+    padding: 28px;
 }
 
 hr {
@@ -87,6 +98,4 @@ h3 {
     margin-top: 12.2%;
 }
 
-.charges {
-    margin: 0px;
-}
+
