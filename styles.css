@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+#masthead {
+    background: #1b1817;
+    color: white;
+    border-bottom: solid 1px #EEE;
+}
+
+
+.border {
+    border: solid 2px gray;
+    border-radius: 5px;
+    box-shadow: 10px 13px 5px #eee;
+    margin: 29px 0;
+}
+
+#meal-details .panel {
+    height: 100%;
+}
+
+.panel-default > .panel-heading  {
+    color: white;
+    background: #1b1817;
+}
+
+#meal-form {
+    margin: 0 61px;
+}
+
+#button-wrapper {
+    margin: 0 92px;
+    display: inline-block;
+}
+
+.error-message {
+    font-size: 10px;
+    color: red;
+}
+
+input {
+    text-align: center;
+}
+
+#meal-details hr {
+    width: 89%;
+}
+
+hr {
+    background-color: black;
+    border: solid #EEE .5px;
+}
+
+.wrapper {
+    margin: 5px 5px;
+}
+
+
+#calculator,
+#meal-details {
+    height: 64vh
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#meal-details {
+    
+}
+
+.buttons {
+    margin-top: 14%;    
+}
+
+#calculator {
+    margin: 0px;
+}
+
+.earnings, 
+.charges {
+    padding: 30px;
+}
+
+.earnings {
+    margin: 0px;
+    margin-top: 12.2%;
+}
+
+.charges {
+    margin: 0px;
+}
