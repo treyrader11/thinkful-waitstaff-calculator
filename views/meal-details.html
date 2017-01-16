@@ -4,28 +4,28 @@
     	<div class="panel-body text-center">
     							
 			<form class="form-horizontal" id="meal-form" name="vm.meal_form" role="form" novalidate ng-submit="vm.addMeal()">
-				<div class="form-group" ng-class="{'has-error': meal_form.meal_price.$invalid && !meal_form.meal_price.$pristine}">
+				<div class="form-group" ng-class="{'has-error': vm.meal_form.meal_price.$invalid && !vm.meal_form.meal_price.$pristine}">
 					<label class="control-label col-sm-6" for="meal_price">Base Meal Price: $</label>
 					<div class="col-sm-6">
 						<input type="number" onfocus="if(this.value == 0) { this.value = ' ' }" value="value" name="meal_price" placeholder="Enter Price" ng-model="vm.data.price" required />
-						<p ng-show="meal_form.$submitted && meal_form.meal_price.$invalid && !meal-form.meal__price.$pristine" class="error-message">Please enter the meal price</p>
+						<p ng-show="vm.meal_form.$submitted && vm.meal_form.vm.meal_price.$invalid && !vm.meal-form.meal__price.$pristine" class="error-message">Please enter the meal price</p>
 					</div>
 				</div>
 
-				<div class="form-group" ng-class="{'has-error': meal_form.tax_rate.$invalid && !meal_form.tax_rate.$pristine}">
+				<div class="form-group" ng-class="{'has-error': vm.meal_form.tax_rate.$invalid && !vm.meal_form.tax_rate.$pristine}">
 					<label class="control-label col-sm-6" for="tax_rate">Tax Rate: %</label>
 					<div class="col-sm-6">
 						<input type="number" onfocus="if(this.value == 0) { this.value = '' }" value="value" name="tax_rate" placeholder="Enter Tax Rate" ng-model="vm.data.taxRate" required />
-						<p ng-show="meal_form.$submitted && meal_form.tax_rate.$invalid && !meal-form.tax_rate.$pristine" class="error-message">Please enter the amount for tax rate</p>
+						<p ng-show="vm.meal_form.$submitted && vm.meal_form.tax_rate.$invalid && !vm.meal-form.tax_rate.$pristine" class="error-message">Please enter the amount for tax rate</p>
 					</div>
 				</div>
 
 					
-				<div class="form-group" ng-class="{'has-error': meal_form.tip_percentage.$invalid && !meal_form.tip_percentage.$pristine}">
+				<div class="form-group" ng-class="{'has-error': vm.meal_form.tip_percentage.$invalid && !vm.meal_form.tip_percentage.$pristine}">
 					<label class="control-label col-sm-6" for="tip_percentage">Tip Percentage: %</label>
 					<div class="col-sm-6">
 						<input type="number" onfocus="if(this.value == 0) { this.value = '' }" value="value" name="tip_percentage" placeholder="Enter Tip" ng-model="vm.data.tipPercentage" required />
-						<p ng-show="meal_form.$submitted && meal_form.tip_percentage.$invalid" class="error-message">Please enter the amount for tip</p>
+						<p ng-show="vm.meal_form.$submitted && vm.meal_form.tip_percentage.$invalid && !vm.meal-form.tax_rate.$pristine" class="error-message">Please enter the amount for tip</p>
 					</div>
 				</div>
 	
@@ -34,10 +34,10 @@
 
 				<div class="form-group" id="button-wrapper">
 					<div class="col-sm-6">
-						<button type="submit" class="btn btn-default" ng-disabled="meal_form.$pristine">Submit</button>
+						<button type="submit" class="btn btn-default" ng-disabled="vm.meal_form.$pristine">Submit</button>
 					</div>
 					<div class="col-sm-6">
-						<button type="button" class="btn btn-default" ng-disabled="meal_form.$pristine" ng-click="vm.cancel()">Cancel</button>
+						<button type="button" class="btn btn-default" ng-disabled="vm.meal_form.$pristine" ng-click="vm.cancel()">Cancel</button>
 					</div>
 				</div>
 
