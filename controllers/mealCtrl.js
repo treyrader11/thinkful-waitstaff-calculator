@@ -20,16 +20,19 @@ app.controller('MealCtrl', function() {
 	    meal.averageTip = meal.tipTotal / meal.mealCount;
 	    console.log("the data:", meal);
 
+        setBackFields(meal);
+    }
+
+    function setBackFields(meal) {
         meal.taxRate = 0;
         meal.price = 0;
         meal.tipPercentage = 0;
         vm.meal_form.$setPristine();
-    	
     }
 
     vm.reset = function() {
         initializeForm();
-        vm.meal_form.$setPristine();
+        setBackFields();
     }
 
     vm.cancel = function() {
