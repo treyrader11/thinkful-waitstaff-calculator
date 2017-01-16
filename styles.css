@@ -100,3 +100,35 @@ h3 {
 }
 
 
+/*angular classes below*/
+
+/*
+input.ng-invalid {
+    border: solid pink;
+}
+
+input.ng-pristine {
+    border: solid blue;
+}
+
+input.ng-submitted.ng-invalid {
+    border: solid red;
+}
+
+input[disabled="disabled"] {
+    opacity: .4;
+    cursor: not-allowed !important;
+}
+*/
+
+/*ANIMATIONS*/
+
+.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.ng-enter.ng-enter-active {
+  opacity: 1;
+}
