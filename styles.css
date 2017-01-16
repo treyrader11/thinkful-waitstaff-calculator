@@ -2,6 +2,7 @@
 
 #masthead {
     background: #1b1817;
+    width: 100%;
     color: white;
     border-bottom: solid 1px #EEE;
     padding: 20px;
@@ -55,6 +56,7 @@ input {
 
 #meal-details {
     padding: 28px;
+    margin: 0 -15px;
 }
 
 hr {
